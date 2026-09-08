@@ -9,7 +9,6 @@ For environment variable definitions and expected values, reference
 `.env*.example` files only (for example, `.env.example`, `.env.local.example`,
 and `.env.production.example`).
 
-The common secret-bearing filenames are denied in `.codex/config.toml`.
+The common secret-bearing filenames are denied in `.agents/settings.json`.
 When adding a new secret-bearing dotenv filename, add it to the deny rules
-in `.codex/config.toml`, `.claude/settings.json`, and `.agents/settings.json`.
-
+in `.agents/settings.json`, `.claude/settings.json`, and `.codex/config.toml`.
