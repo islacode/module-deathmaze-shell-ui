@@ -1,0 +1,21 @@
+# Keep legacy sandbox_mode / sandbox_workspace_write settings out of loaded
+# configuration files: they override default_permissions.
+approval_policy = "on-request"
+default_permissions = "deathmaze"
+
+[permissions.deathmaze]
+extends = ":workspace"
+
+# Exact filenames preserve access to .env*.example templates.
+# Add new secret-bearing filenames here and in .claude/settings.json.
+[permissions.deathmaze.filesystem.":workspace_roots"]
+".env" = "deny"
+".env.local" = "deny"
+".env.development" = "deny"
+".env.test" = "deny"
+".env.staging" = "deny"
+".env.production" = "deny"
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
