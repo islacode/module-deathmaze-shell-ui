@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    }
+  },
+  "permissions": {
+    "deny": [
+      "read_file(./.env)",
+      "read_file(./.env.local)",
+      "read_file(./.env.development)",
+      "read_file(./.env.test)",
+      "read_file(./.env.staging)",
+      "read_file(./.env.production)",
+      "read_file(.env)",
+      "read_file(.env.local)",
+      "read_file(.env.development)",
+      "read_file(.env.test)",
+      "read_file(.env.staging)",
+      "read_file(.env.production)",
+      "view_file(./.env)",
+      "view_file(./.env.local)",
+      "view_file(./.env.development)",
+      "view_file(./.env.test)",
+      "view_file(./.env.staging)",
+      "view_file(./.env.production)",
+      "view_file(.env)",
+      "view_file(.env.local)",
+      "view_file(.env.development)",
+      "view_file(.env.test)",
+      "view_file(.env.staging)",
+      "view_file(.env.production)",
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.development)",
+      "Read(./.env.test)",
+      "Read(./.env.staging)",
+      "Read(./.env.production)"
+    ]
+  }
+}
