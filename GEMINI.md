@@ -11,4 +11,5 @@ and `.env.production.example`).
 
 The common secret-bearing filenames are denied in `.agents/settings.json`.
 When adding a new secret-bearing dotenv filename, add it to the deny rules
-in `.agents/settings.json`, `.claude/settings.json`, and `.codex/config.toml`.
+in `.agents/settings.json`, `.claude/settings.json`, `.codex/config.toml`,
+and `.cursor/cli.json`.
